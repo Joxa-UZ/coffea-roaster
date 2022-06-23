@@ -151,6 +151,7 @@ body {
 
 .hero-img {
     position: relative;
+    right: -2%;
     background-image: url(../images/intro-image.jpg);
     background-repeat: no-repeat;
     background-position: calc(50% + 220px) calc(50%);
@@ -208,7 +209,7 @@ body {
     line-height: 19px;
     text-align: center;
     letter-spacing: 1px;
-    font-variant: small-caps;
+    text-transform: uppercase;
     color: var(--color-white);
     background-color: var(--colorgreen);
     border-radius: 100px;
@@ -294,8 +295,8 @@ body {
 .collection-list-item:nth-child(2)::after {
     position: absolute;
     bottom: -57%;
-    right: -24%;
-    width: 392px;
+    right: -31%;
+    width: 469px;
     height: 477px;
     background-image: url("../images/Vektor-1.svg");
     background-repeat: no-repeat;
@@ -617,8 +618,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-line-pack: center;
-    align-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
     list-style: none;
 }
 
