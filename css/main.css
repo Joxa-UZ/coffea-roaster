@@ -118,7 +118,7 @@ section{
 
 .hero-main-img {
     position: relative;
-    right: -20px;
+    right: -3%;
     top: 0;
 }
 
@@ -172,8 +172,9 @@ section{
 }
 
 .collection-section {
+    max-width: 100%;
     margin: 17px;
-    padding-top: 50px;
+    padding: 50px 0px;
     background-image: url(../images/colloection-back.png);
 }
 
@@ -202,6 +203,9 @@ section{
     align-items: center;
     list-style: none;
 }
+.collection-list-item:nth-child(1){
+    position: relative;
+}
 .collection-list-item:nth-child(2n-1){
     margin: 0 auto;
 }
@@ -217,20 +221,19 @@ section{
 }
 .collection-list-item:nth-child(1)::before{
     position: absolute;
-    top: -133px;
-    left: -249px;
+    top: -6%;
+    left: -20%;
     content: "";
     background-image: url(../images/Vector.svg);
+    background-size: contain;
     background-repeat: no-repeat;
     width: 410px;
     height: 300px;
 }
 .collection-list-item:nth-child(2)::after{
     position: absolute;
-    bottom: -210px;
-    /* top: 100px; */
-    right: -254px;
-    /* left: 778px; */
+    bottom: -57%;
+    right: -24%;
     content: "";
     background-image: url(../images/Vektor-1.svg);
     background-repeat: no-repeat;
@@ -239,8 +242,8 @@ section{
 }
 .collection-list-item:nth-child(4)::before{
     position: absolute;
-    top: -43px;
-    left: -296px;
+    top: -7%;
+    left: -26%;
     content: "";
     background-image: url(../images/Vector-2.svg);
     background-repeat: no-repeat;
