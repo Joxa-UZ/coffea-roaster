@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .example {
     display: -ms-grid;
     display: grid;
@@ -15,8 +22,8 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
     background: -o-linear-gradient(top, white, black);
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
     background: linear-gradient(to bottom, white, black);
 }
 
@@ -35,8 +42,8 @@
     font-style: normal;
     font-weight: 400;
     src: url("../fonts/roboto-v30-latin_cyrillic-regular.woff2") format("woff2"),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url("../fonts/roboto-v30-latin_cyrillic-regular.woff") format("woff");
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/roboto-v30-latin_cyrillic-regular.woff") format("woff");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -47,8 +54,8 @@
     font-style: normal;
     font-weight: 500;
     src: url("../fonts/roboto-v30-latin_cyrillic-500.woff2") format("woff2"),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url("../fonts/roboto-v30-latin_cyrillic-500.woff") format("woff");
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/roboto-v30-latin_cyrillic-500.woff") format("woff");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -58,8 +65,8 @@
     font-style: normal;
     font-weight: 700;
     src: url("../fonts/roboto-v30-latin_cyrillic-700.woff2") format("woff2"),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url("../fonts/roboto-v30-latin_cyrillic-700.woff") format("woff");
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/roboto-v30-latin_cyrillic-700.woff") format("woff");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -143,7 +150,7 @@ body {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-around;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -158,19 +165,19 @@ body {
     background-size: contain;
     width: 710px;
     height: 696px;
-
+    
 }
 
 .hero-main-img {
-    /* position: relative; */
-    right: -3%;
+    position: relative;
+    right: -15%;
     top: 0;
 }
 
 .hero-img::before {
     position: absolute;
     top: calc(-11%);
-    left: calc(-9%);
+    left: calc(5%);
     z-index: 2;
     content: "";
     background-image: url(../images/intro-image-one.svg);
@@ -356,7 +363,7 @@ body {
     background-image: url(../images/why-background.jpg);
     background-position: center;
     background-size: cover;
-
+    
 }
 
 .why-choose-info {
@@ -530,7 +537,7 @@ body {
     line-height: 75px;
     color: var(--color333);
     opacity: 0.8;
-
+    
 }
 
 .how-list-item:nth-child(2)::before {
@@ -620,7 +627,9 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     list-style: none;
 }
 
@@ -634,4 +643,181 @@ body {
 
 .footer {
     font-size: 16px;
+}
+
+
+
+/*  */
+.about-two{
+    margin: 20px;
+}
+.our-commitment{
+    padding-top: 160px;
+    padding-bottom: 200px;
+    background-image: url(../images/our-commitment-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-hero-info{
+    width: 372px;
+    padding-left: 0;
+    padding-top: 156px;
+    padding-bottom: 261px;
+}
+.about-section-two-image{
+    margin-right: 180px;
+}
+.about-section-two{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.about-section-two-content{
+    width: 745px;
+}
+.about-section-two-theme{
+    margin-bottom: 24px;
+}
+.about-section-two::before{
+    position: absolute;
+    top: -18%;
+    left: -22%;
+    width: 410px;
+    height: 300px;
+    background-image: url("../images/Vector.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+}
+.about-three{
+    margin: 20px;
+    padding-top: 80px;
+}
+.quality-box{
+    position: relative;
+    margin-top: 90px;
+    padding-top: 100px;
+    padding-bottom: 118px;
+    background-image: url(../images/why-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.quality-content{
+    width: 636px;
+}
+.quality-content-theme{
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: var(--weight700);
+    font-size: 50px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+.quality-content-text{
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.quality-content-box{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.quality-images{
+    position: absolute;
+    right: 3%;
+    top: -20%;
+}
+.quarters-section{
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.quarters-box{
+    
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-image: url(../images/how-back.png);
+}
+.quarters-theme{
+    margin: 0;
+    margin-bottom: 80px;
+    font-weight: var(--weight700);
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+.quarters-list{
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+}
+.quarters-list-item{
+    position: relative;
+    width: 433px;
+    margin-right: 20px;
+    padding-top: 140px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    background-color: #fff;
+}
+.second-country{
+    padding-top: 187px;
+}
+.third{
+    padding-top: 187px;
+}
+.countries::before{
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    width: 120px;
+    height: 143px;
+    display: block;
+    content: "";
+    background-image: url(../images/united-kingdom.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.countries-canada::before{
+    background-image: url(../images/canada.svg);
+    width: 120px;
+    height: 120px;
+}
+.countries-australia::before{
+    background-image: url(../images/australia.svg);
+    width: 120px;
+    height: 107px;
+}
+.countries-names-list{
+    width: 231px;
+}
+.countries-name{
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: var(--weight500);
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #333333;
+}
+.countries-info-items{
+    display: block;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color333);
 }
